@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:opsz,wght@9..40,400;9..40,800&family=Poppins:wght@300&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+
+  <style>
+    body{
+      background-color: #201f28;   
+      color: antiquewhite;
+      font-family: 'Abel', sans-serif;
+      font-family: 'DM Sans', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Ubuntu', sans-serif;
+          }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    figure {
+        height: 270px;
+ 
+        width: 360px;
+      
+        overflow: hidden;
+        position: relative;
+        justify-content: space-between;
+
+        border: 2px solid #62929a;
+        border-radius: 20px;
+    }
+
+    .image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+        display: block;
+        transition: all .5s linear;
+    }
+
+    figcaption {
+        position: absolute;
+        transition: all .5s linear;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        flex-direction: column;
+        text-transform: uppercase;
+        transition: all .5s linear;
+    }
+
+    /* figure:hover .image {
+        transform: scale(1.3);
+    } */
+
+    figure:hover figcaption {
+        opacity: 1;
+        background: rgba(30, 33, 33, 0.3);
+    }
+
+    #navbarNav li:hover{
+
+      color: #62929a;
+      border-radius: 10px;
+     
+    }
+
+    .services li{
+      border: 1px solid #62929a;
+      margin: 10px;
+      list-style: none;
+      margin-left: -25px;
+      margin-top: 20px;
+      padding: 8px;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .services li a {
+      text-decoration: none;
+      color: #62929a ;
+    }
+    .services li:hover{
+      background-color:rgba(30, 92, 103, 0.3);
+      color: rgb(255, 255, 255, 0.8);
+    }
+
+    .fa {
+        padding: 3px 4px 3px 3px;;
+        border-radius: 50%;
+        font-size: 19px;
+        width: 27px;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        
+         color: white;
+    }
+
+    .f2 a:hover{
+      text-decoration: none;
+      color: white;
+      
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    footer .f2{
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     font-size: medium;
+     align-items: center;
+    
+    }
+ 
+
+  </style>
+  <body>
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#">
+            <img src="./img/20231005_113144.png" alt="Your Logo" width="100%" height="50px">
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item1">
+                  <a class="nav-link" href="#carouselExampleFade">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#ser1">Services</a>
+              </li>
+         
+            
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              </ul>
+          </div>
+      </nav>
+
+    <!-- Carousel start here -->
+
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/event/chuttersnap-aEnH4hJ_Mrs-unsplash.jpg" width="100%" height="755px" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Food/brooke-lark-HjWzkqW1dgI-unsplash.jpg" width="100%" height="755px" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img//gallery/jp-fichman-8j9U3R2W_Sc-unsplash.jpg" width="100%" height="755px" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <br>
+
+
+      <hr style="color: #62929a;" id="about"><br><br><br>
+      <!-- <div class="container"  style="margin-top: 90px;"> -->
+        <h1 style="text-align: center; background-color: #62929a;">ABOUT</h1>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+              <h2 class="featurette-heading"> <br><span class="text-muted">Who I am and What I do</span></h2>
+              <p class="lead">As a nature photographer, I am deeply passionate about capturing the beauty and wonder of the natural world. With a keen eye for detail and a profound appreciation for our planet's diverse ecosystems, I strive to convey the essence of nature through my lens. Through my work, I aim to inspire a sense of awe and reverence for the environment, encouraging conservation and a deeper connection to the world around us. I have spent years honing my craft, exploring remote landscapes, and waiting patiently for that perfect shot. Every image I create tells a story, sharing the untamed splendor of our Earth. Thank you for joining me on this visual journey through the wilderness.</p>
+            </div>
+            <div class="col-md-4" >
+              <img src="./img/matteo-vistocco-iv420eRkZWc-unsplash.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto  fade-in" width="500" height="500" alt="">
+      
+            </div>
+          </div>
+          <br><br><br>
+
+          <hr  id="gallery">
+
+          <br><br><br>
+        
+          <!-- gallary start here -->
+
+          <h2 class="text-center" style="background-color: #62929a; padding: 10px;">GALLERY</h2><br>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <figure>
+                  <img src="./img/Food/chad-montano-eeqbbemH9-c-unsplash.jpg" class="image" alt="">
+                  <figcaption>
+                    <h2>BELGAUM</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <figure>
+                  <img src="./img/sports/jonathan-chng-3R4vPrSB1c4-unsplash.jpg" class="image" alt="">
+                  <figcaption>
+                    <h2>BELGAUM</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                  </figcaption>
+                </figure>
+              </div>
+    
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                <figure>
+                  <img src="./img/gallery/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg" class="image" alt="">
+                  <figcaption>
+                    <h2>BELGAUM</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <figure>
+                  <img src="./img/gallery/jay-mantri-TFyi0QOx08c-unsplash.jpg" class="image" alt="">
+                  <figcaption>
+                    <h2>BELGAUM</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                  </figcaption>
+                </figure>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <figure>
+                  <img src="./img/gallery/v2osk-1Z2niiBPg5A-unsplash.jpg" class="image" alt="">
+                  <figcaption>
+                    <h2>BELGAUM</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                  </figcaption>
+                </figure>
+              </div>
+    
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                <figure>
+                  <img src="./img/gallery/jp-fichman-8j9U3R2W_Sc-unsplash.jpg" class="image" alt="">
+                  <figcaption>
+                    <h2>BELGAUM</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                  </figcaption>
+                </figure>
+              </div>
+    
+            </div>
+          </div><br><br>
+
+
+          <hr id="ser1">
+    
+       
+         
+
+
+        <!-- Services start here -->
+        <br><br><br>
+        <h2 style="background-color: #62929a; padding: 10px; text-align: center;">SERVICES</h2>
+        <div class=" container services">
+             <ul>
+              <li>Portrait Photography <a href="./potrait.html">Cilck</a></li>
+              <li >Event Photography <a href="./event.html">Cilck</a></li>
+              <li>Wedding Photography <a href="./potrait.html">Cilck</a></li>
+              <li>Commercial Photography <a href="./potrait.html">Cilck</a></li>
+              <li>Fashion Photography <a href="./potrait.html">Cilck</a> </li>
+              <li>Landscape and Nature Photography: <a href="./potrait.html">Cilck</a></li>
+              <li>Food Photography <a href="./potrait.html">Cilck</a></li>
+              <li>Sports Photography <a href="./sports.html">Cilck</a></li>
+              <li>Family and Newborn Photography <a href="./potrait.html">Cilck</a></li>
+             </ul>
+        </div>
+        <br><br><br>
+
+        <hr id="contact">
+
+
+        <br><br>
+        <h2 style="background-color: #62929a; text-align: center;">Contact Us for Your Photography Needs</h2>
+        <div class=" container contactus">
+          <div class="p11" >
+          <p>Are you looking to capture the beauty of life's moments, create stunning portraits, or document your special events through the lens of an experienced photographer? I'd love to hear from you!</p>
+
+           <p>Please don't hesitate to reach out with any questions, inquiries, or to discuss your photography needs. Your vision is important to me, and I'm dedicated to helping you turn it into breathtaking visual stories.</p>
+          </div>
+
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                  <form action="process_contact_form.php" method="post">
+                      <div class="form-group">
+                          <label for="name">Your Name</label>
+                          <input type="text" class="form-control" id="name" name="name" style="background-color: rgba(30, 92, 103, 0.2); color: white;" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email Address</label>
+                          <input type="email" class="form-control" style="background-color: rgba(30, 92, 103, 0.2); color: white;" id="email" name="email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea class="form-control" style="background-color: rgba(30, 92, 103, 0.2); color: white;" id="message" name="message" rows="5" required></textarea>
+                      </div>
+                      <br>
+                      <div class="text-center">
+                      <button type="submit" class="px-5" style="background-color: #62929a; color: aliceblue;">Submit</button>
+                    </div>
+                  </form>
+              </div> 
+          </div>
+        </div><br>
+
+
+          <footer  style="background-color: #000000; padding: 20px;">
+            <div class="f2" >
+              <a href="https://twitter.com/" class="fa fa-twitter" style="width: 90px;"> Twitter</a> <br> 
+              <a href="https://www.facebook.com/" class="fa fa-google" style="width: 110px;"> Facebook</a> <br>
+              <a href="https://web.whatsapp.com/" class="fa fa-linkedin" style="width: 90px;"> Linkdin</a> <br>
+              <a href="https://www.youtube.com/" class="fa fa-youtube" style="width: 90px;"> Youtub</a> <br>
+              <a href="https://www.instagram.com/" class="fa fa-instagram" style="width: 110px;"> Instagram</a> <br>
+            </div>
+             
+          </footer>
+         
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+
+ 
+  </body>
+</html>
